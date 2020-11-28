@@ -46,18 +46,6 @@ function msc_wp_enqueue_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'msc_wp_enqueue_scripts', 20 );
 
-/**
- * ###############################################################################
- * You can adjust/remove the functions after this line. But make sure the function your remove
- * wrapped with "function_exists" statement. Which means, you can delete/edit any function after this line
- * wrapped with "function_exists" statement.
- * ###############################################################################
- */
-
-/**
- * WordPress Required Functions.
- */
-
 if ( ! function_exists( 'quasar_content_width' ) ) {
 	/**
 	 * Adjusts content_width value for video post formats and attachment templates.

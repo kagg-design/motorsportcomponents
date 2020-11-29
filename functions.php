@@ -86,3 +86,6 @@ function add_favicon() {
 // Now, just make sure that function runs when you're on the login page and admin pages.
 add_action( 'login_head', 'add_favicon' );
 add_action( 'admin_head', 'add_favicon' );
+
+// Fix deprecated jQuery functions.
+require_once 'fix-deprecated-jquery.php';
